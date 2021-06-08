@@ -13,8 +13,8 @@ import javax.mail.internet.MimeMessage;
 public class Mail  {
 	
 	private static final String host = "smtp.naver.com";
-	private static final String user = "pigi-1004@naver.com";
-	private static final String password  = "dz1178512";
+	private static final String user = user;
+	private static final String password  = pw;
 	private static int sendNumber;
 	
 	public static void confirmNumber(String to) {
