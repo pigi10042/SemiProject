@@ -13,6 +13,7 @@
  <script src = "https://developers.kakao.com/sdk/js/kakao.js"></script>    
 <style>
 img{ width : 100%; }
+button{ width : 100%; }
 </style>
 
 <script>
@@ -37,9 +38,9 @@ img{ width : 100%; }
 	                       url:'/v2/user/me',
 	                       success: function(res){
 	                        var form = document.createElement('form');                   
-	                        subm(form,"email",res.kakao_account['email'],"sign.do");
-	                       	subm(form,"nickname",res.properties['nickname'],"sign.do");
-	                       	subm(form, "snsCheck", 1);
+	                        subm(form,"email",res.kakao_account['email'],"Kakaosign.do");
+	                       	subm(form,"nickname",res.properties['nickname'],"Kakaosign.do");
+	                       	subm(form, "snsCheck", 1,"Kakaosign.do");
 	                    	document.body.appendChild(form);
 	                       	form.submit(); 
 	                         },
@@ -76,13 +77,13 @@ img{ width : 100%; }
 				<td width =7> <input type =password name =pw>
 			</tr>
 			<tr>
-				<td colspan=2> <button type = submit id = submit>로그인하기</button>
+				<td colspan=2 width =10> <button type = submit id = submit>로그인하기</button>
 			</tr>	
 			<tr>
-				<td colspan=2> <button type = button id = signup>회원가입</button>
+				<td colspan=2 width =10> <button type = button id = signup>회원가입</button>
 			</tr>	
 			<tr>
-				<td colspan=2><img src ="https://lh3.googleusercontent.com/proxy/AMglcnULDcti4CiqUX92xN7KVsFMeucHM3NIJnFHMDCllIkvE07uC--8ELGFEtHF_dPz6wGfBZ-43986Id5cWHXt" id = kakao></td>
+				<td colspan=2><img src ="kakao_login_medium_narrow.png" id = kakao></td>
 			</tr>
 		</form>
 		</table>	

@@ -71,7 +71,7 @@ public class MemberDAO {
 	}
 	
 	public boolean dupliId(String email) throws Exception {
-		String sql = "select * from member where email =?";
+		String sql = "select * from kakamember where email =?";
 		try(Connection conn = this.getConnection();
 			PreparedStatement psmt = conn.prepareStatement(sql);
 				){

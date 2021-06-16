@@ -44,7 +44,7 @@
 	
 	<div class="container p-5 mt-5 shadow bg-white rounded">
 		<h2>회원가입</h2>
-		<form name = frmdate action = "EmailAuth.jsp" method="post">
+		<form name = frmdate action = "auth.do" method="post">
 			<div class="form-row align-items-center">
 				<div class="col-12 col-sm-2 mb-2">
 					<label class="mb-0" for="inlineFormInput">아이디</label>
